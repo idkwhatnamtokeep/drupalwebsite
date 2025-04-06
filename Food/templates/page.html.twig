@@ -1,0 +1,45 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+🧩 Step 4: Add a Simple Page Template
+Create templates/page.html.twig:
+
+twig
+Copy
+Edit
+<!DOCTYPE html>
+<html>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body>
+    <a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+
+    <header>
+      {{ page.header }}
+    </header>
+
+    <main id="main-content">
+      {{ page.content }}
+    </main>
+
+    <aside>
+      {{ page.sidebar }}
+    </aside>
+
+    <footer>
+      {{ page.footer }}
+    </footer>
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

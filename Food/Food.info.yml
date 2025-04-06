@@ -1,0 +1,15 @@
+name: 'Foods'
+type: theme
+description: 'A minimal custom theme.'
+core_version_requirement: ^10
+package: Custom
+base theme: false
+
+libraries:
+  - Food/global-styling
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
