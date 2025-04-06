@@ -1,0 +1,18 @@
+# Drupal stuff
+/core/
+/modules/contrib/
+/themes/contrib/
+/profiles/
+/sites/default/files/
+sites/*/settings*.php
+
+# Composer & node
+/vendor/
+/node_modules/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Other
+*.log
